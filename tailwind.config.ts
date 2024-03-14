@@ -11,6 +11,12 @@ const config: Config = {
     fontFamily: {
       sans: "var(--font-helixa)",
     },
+    colors: {
+      "gray-back": "#E7E7E8",
+      "button-color": "#68820C",
+      "button-color-hover": "#7fa106",
+      "button-text-color": "#FFFFFF",
+    },
   },
   plugins: [],
 };

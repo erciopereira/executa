@@ -1,0 +1,15 @@
+{
+    "Index": {
+      "header": {
+        "start": "START",
+        "services": "SERVICES",
+        "about": "ABOUT",
+        "contact": "CONTACT",
+        "languages": {
+          "english": "English",
+          "portuguese": "Portuguese",
+          "spanish": "Spanish"
+        }
+      }
+    }
+  }

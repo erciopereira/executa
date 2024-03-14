@@ -1,0 +1,16 @@
+{
+    "Index": {
+      "header": {
+        "start": "INÍCIO",
+        "services": "SERVIÇOS",
+        "about": "SOBRE",
+        "contact": "CONTATO",
+        "languages": {
+          "english": "Inglês",
+          "portuguese": "Português",
+          "spanish": "Espanhol"
+        }
+      }
+      
+    }
+  }
