@@ -4,13 +4,18 @@
         "start": "INÍCIO",
         "services": "SERVIÇOS",
         "about": "SOBRE",
-        "contact": "CONTATO",
-        "languages": {
-          "english": "Inglês",
-          "portuguese": "Português",
-          "spanish": "Espanhol"
+        "contact": "CONTATO"
+      },
+      "start-area": {
+        "text-1": "Desenhamos estratégias.",
+        "text-2": "Executamos com maestria",
+        "typing-text": {
+          "text-1": "suas redes sociais.",
+          "text-2": "seu linkedin.",
+          "text-3": "seu instagram.",
+          "text-4": "seus infoprodutos.",
+          "text-5": "seus serviços."
         }
       }
-      
     }
   }

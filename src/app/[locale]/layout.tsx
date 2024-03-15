@@ -2,6 +2,8 @@
 import localFont from "@next/font/local";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import Image from "next/image";
+import vetorLogo from "../../../public/images/vetor_logo_topo.png";
 import "./globals.css";
 
 const helixa = localFont({
@@ -41,6 +43,14 @@ export default function RootLayout({
   return (
     <html lang={locale} className={`${helixa.variable} font-sans`}>
       <body className="bg-gray-back antialiased">
+        <div className="h-full w-full absolute bg-gradient-to-b from-gray-top" />
+        <Image
+          src={vetorLogo}
+          alt=""
+          height={2061.04}
+          width={2433.97}
+          className="absolute right-0 top-20"
+        />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>

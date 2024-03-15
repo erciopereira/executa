@@ -4,11 +4,17 @@
         "start": "COMENZAR",
         "services": "SERVICIOS",
         "about": "ACERCA DE",
-        "contact": "CONTACTO",
-        "languages": {
-          "english": "Inglés",
-          "portuguese": "Portugués",
-          "spanish": "Español"
+        "contact": "CONTACTO"
+      },
+      "start-area": {
+        "text-1": "Planificamos estrategias.",
+        "text-2": "Las ejecutamos con maestría",
+        "typing-text": {
+          "text-1": "tus redes sociales.",
+          "text-2": "tu linkedin.",
+          "text-3": "tu instagram.",
+          "text-4": "tus infoproductos.",
+          "text-5": "tus servicios."
         }
       }
     }

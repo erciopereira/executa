@@ -1,48 +1,52 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prettier/prettier */
-import { BR, ES, US } from "country-flag-icons/react/3x2";
-import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import { CircleFlag } from "react-circle-flags";
 
 export interface SelectLanguageProps {
   showChangeLanguage: string;
 }
 
 export function SelectLanguage({ showChangeLanguage }: SelectLanguageProps) {
-  const t = useTranslations("Index");
   const router = useRouter();
 
   const changeLanguage = (value: string) => {
     router.replace(`/${value}`);
   };
 
+  const languageProps = [
+    {
+      acronym: "pt",
+      flag: "br",
+      text: "PT",
+    },
+    {
+      acronym: "en",
+      flag: "us",
+      text: "EN",
+    },
+    {
+      acronym: "es",
+      flag: "es",
+      text: "ES",
+    },
+  ];
+
   return (
     <div className={`${showChangeLanguage} absolute left-0 top-8 -bottom-16`}>
-      <button
-        type="button"
-        className="flex items-center gap-2"
-        onClick={() => changeLanguage("pt")}
-        value="pt"
-      >
-        <BR height={20} />
-        <div>{t("header.languages.portuguese")}</div>
-      </button>
-      <button
-        type="button"
-        className="flex items-center gap-2"
-        onClick={() => changeLanguage("en")}
-      >
-        <US height={20} />
-        <div>{t("header.languages.english")}</div>
-      </button>
-      <button
-        type="button"
-        className="flex items-center gap-2"
-        onClick={() => changeLanguage("es")}
-      >
-        <ES height={20} />
-        <div>{t("header.languages.spanish")}</div>
-      </button>
+      {languageProps.map((item) => (
+        <button
+          type="button"
+          className="flex items-center gap-2 mb-2"
+          onClick={() => changeLanguage(item.acronym)}
+          key={item.acronym}
+        >
+          <div className="h-6 w-6">
+            <CircleFlag countryCode={item.flag} />
+          </div>
+          <div>{item.text}</div>
+        </button>
+      ))}
     </div>
   );
 }

@@ -4,11 +4,17 @@
         "start": "START",
         "services": "SERVICES",
         "about": "ABOUT",
-        "contact": "CONTACT",
-        "languages": {
-          "english": "English",
-          "portuguese": "Portuguese",
-          "spanish": "Spanish"
+        "contact": "CONTACT"
+      },
+      "start-area": {
+        "text-1": "Crafting strategies.",
+        "text-2": "Perfecting execution on",
+        "typing-text": {
+          "text-1": "your social media.",
+          "text-2": "your linkedin.",
+          "text-3": "your instagram.",
+          "text-4": "your infoproducts.",
+          "text-5": "your services."
         }
       }
     }

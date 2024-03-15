@@ -18,13 +18,13 @@ export function Header() {
         <SelectLanguage showChangeLanguage={showChangeLanguage} />
       </div>
 
-      <Image src={logo} alt="logo" height={28} />
-      <div className="text-xl">{t("header.start")}</div>
-      <div className="text-xl">{t("header.services")}</div>
-      <div className="text-xl">{t("header.about")}</div>
+      <Image src={logo} alt="logo" height={28} className="z-10" />
+      <div className="text-xl z-10">{t("header.start")}</div>
+      <div className="text-xl z-10">{t("header.services")}</div>
+      <div className="text-xl z-10">{t("header.about")}</div>
       <button
         type="button"
-        className="text-button-text-color text-xl bg-button-color px-4 py-1 rounded hover:bg-button-color-hover"
+        className="text-button-text-color text-xl bg-button-color px-4 py-1 rounded hover:bg-button-color-hover z-10"
       >
         {t("header.contact")}
       </button>
