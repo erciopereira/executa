@@ -15,6 +15,65 @@
           "text-3": "tu instagram.",
           "text-4": "tus infoproductos.",
           "text-5": "tus servicios."
+        },
+        "text-3": "Ha llegado el momento de posicionarte en las redes con estrategias que realmente funcionan y impulsan tu nombre.",
+        "text-button-position": "Quiero posicionar mi marca."
+      },
+      "important-things-area": {
+        "left-text": "LO QUE ES IMPORTANTE PARA NOSOTROS",
+        "right-text": {
+          "text-1": "Autenticidad",
+          "text-2": "Competencia",
+          "text-3": "Inspiración",
+          "text-4": "Compromiso",
+          "description-text-1": "Nadie crea una marca o una imagen personal simplemente copiando lo que todos hacen.",
+          "description-text-2": "De nada sirve tener una marca posicionada si no es competente o experta en lo que hace.",
+          "description-text-3": "Es importante que la marca o el profesional inspire a las personas, especialmente compartiendo aprendizajes.",
+          "description-text-4": "Para lograr el éxito deseado con el posicionamiento, tú y tu marca deben estar comprometidos con el proceso y las entregas."
+        },
+        "marquee-text": {
+          "text-1": "EXPERIMENTADA",
+          "text-2": "EXCEPCIONAL",
+          "text-3": "EXTRAORDINARIA",
+          "text-4": "EXCELENTE"
+        }
+      },
+      "about-area": {
+        "text-1": "¡Conoce la empresa que se encargará de tus redes sociales!",
+        "text-2": "Executa es el lugar ideal para que aprendas a posicionarte en las redes sociales. Posicionamos en el mercado empresas, emprendedores y ejecutivos de manera precisa, elegante, personalizada e innovadora.",
+        "text-3": "Nuestro equipo está compuesto por un grupo de mujeres talentosas y apasionadas por los medios digitales, con edades, formaciones académicas, personalidades y ubicaciones diversas.",
+        "text-4": "Cada una aporta una perspectiva única y una riqueza de experiencias que nos permite ofrecer soluciones creativas y efectivas a nuestros clientes. Desde diseñadoras gráficas hasta especialistas en marketing digital, desde redactoras y correctoras hasta gestoras de proyectos, nuestro equipo trabaja en conjunto para cocrear campañas digitales que realmente destacan."
+      },
+      "market-position": {
+        "market": {
+          "text-1": "+3 años",
+          "text-2": "en el mercado"
+        },
+        "clients": {
+          "text-1": "+50 clientes",
+          "text-2": "bien posicionados"
+        },
+        "team": {
+          "text-1": "100% del equipo",
+          "text-2": "compuesto por mujeres"
+        }
+      },
+      "executives-location": {
+        "title": "¿Dónde están nuestros ejecutivos?"
+      },
+      "ideal-servise": {
+        "left-area": {
+          "text": "EL SERVICIO IDEAL PARA TI!"
+        },
+        "slide": {
+          "content": {
+            "exclusive": "Estrategias personalizadas para diversas redes sociales, por medio del análisis de objetivos, creación de contenido de valor y fortalecimiento de la marca.",
+            "expertise": "Consultoría puntual, con un número definido de sesiones, en la cual nuestro equipo de expertos realiza un diagnóstico del posicionamiento digital de la empresa o del profesional, propone soluciones y entrega el plan completo para que sea ejecutado con éxito.",
+            "executive": "Creación de un perfil “all-star” en LinkedIn, para que ejecutivos y ejecutivas sean notados en el mercado laboral. Incluye la creación de una estrategia de contenido sólida y única para alcanzar los objetivos, así como toda la operacionalización del proceso.",
+            "executiveco": "Elaboración de una estrategia de posicionamiento de marca empleadora sólida, que utiliza a sus líderes y colaboradores como influencers. Incluye un trabajo de apoyo a todos los involucrados, para potenciar también sus perfiles personales de LinkedIn.",
+            "extreme": "Asociación estratégica entre Executa y el especialista para crear y lanzar productos digitales exitosos.",
+            "expert": "Mentoría individual, totalmente personalizada, que tiene en cuenta las necesidades y objetivos del cliente."
+          }
         }
       }
     }

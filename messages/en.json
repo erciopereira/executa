@@ -15,6 +15,65 @@
           "text-3": "your instagram.",
           "text-4": "your infoproducts.",
           "text-5": "your services."
+        },
+        "text-3": "It's time to establish your presence on social media with effective strategies that elevate your name.",
+        "text-button-position": "I'm ready to position my brand"
+      },
+      "important-things-area": {
+        "left-text": "WHAT MATTERS TO US",
+        "right-text": {
+          "text-1": "Authenticity",
+          "text-2": "Competence",
+          "text-3": "Inspiration",
+          "text-4": "Commitment",
+          "description-text-1": "No one builds a brand or personal image by merely copying what everyone else is doing. It’s about carving out your unique space.",
+          "description-text-2": "Having a well-positioned brand counts for little if it lacks competence or expertise in its field.",
+          "description-text-3": "It’s crucial for both the brand and the professional to inspire others, particularly through sharing knowledge and experiences.",
+          "description-text-4": "To achieve the desired success in positioning, both you and your brand must be fully committed to the process and the outcomes."
+        },
+        "marquee-text": {
+          "text-1": "EXPERIENT",
+          "text-2": "EXCEPTIONAL",
+          "text-3": "EXTRAORDINARY",
+          "text-4": "EXCELLENT"
+        }
+      },
+      "about-area": {
+        "text-1": "Meet the Company That Will Take Care of Your Social Media!!",
+        "text-2": "Executa is the ideal place to learn how to position yourself on social media. We position businesses, entrepreneurs, and executives in the market with precision, elegance, personalization, and innovation.",
+        "text-3": "Our team is a dynamic blend of talent and passion, featuring a diverse group of women from Gen X, Millennials, and Gen Z. Each member specializes in digital media, bringing a unique mix of educational backgrounds, personalities, and experiences. Spanning across three continents, our team’s rich variety adds depth and perspective to our work in the digital realm.",
+        "text-4": "Each member brings a unique perspective and a wealth of experience that allows us to offer creative and effective solutions to our clients. From graphic designers to digital marketing specialists, and from writers and editors to project managers, our team collaborates closely to co-create digital campaigns that truly stand out."
+      },
+      "market-position": {
+        "market": {
+          "text-1": "Over 3 years",
+          "text-2": "in the market"
+        },
+        "clients": {
+          "text-1": "Over 50 clients",
+          "text-2": "successfully positioned"
+        },
+        "team": {
+          "text-1": "100% a team",
+          "text-2": "women-powered"
+        }
+      },
+      "executives-location": {
+        "title": "Where are our executives"
+      },
+      "ideal-servise": {
+        "left-area": {
+          "text": "OUR TAILORED SERVICES"
+        },
+        "slide": {
+          "content": {
+            "exclusive": "Custom strategies across different social networks are achieved through in-depth, objective analysis, creating valuable content, and strengthening your brand. Are you ready to position your brand in the market distinctively? Choose our Exclusive service.",
+            "expertise": "Targeted consultancy offering a set number of sessions, where our team of experts conducts a comprehensive analysis of your or your company’s digital positioning. Proposes tailor-made solutions. Delivers a complete plan for successful execution. In need of expert consultancy now? Our Expertise service is just what you’re looking for.",
+            "executive": "Develop an “all-star” LinkedIn profile to make your mark in the job market. This service includes developing a robust, unique content strategy and comprehensively managing your executive profile enhancement process. Are you ready to elevate your executive presence?",
+            "executiveco": "Develop a robust employer brand positioning strategy that leverages your leaders and collaborators as influencers. This service includes comprehensive support for all involved, enhancing their personal LinkedIn profiles as well. Ready to build a successful company?",
+            "extreme": "A strategic partnership between Executa and industry experts to create and launch successful digital products. Ideal for those looking to make a significant impact in the digital space. Ready to launch a digital product?",
+            "expert": "Individual, fully personalized mentorship that considers the client’s unique needs and goals. This service offers a tailored approach to personal and professional growth. Interested in personalized mentorship?"
+          }
         }
       }
     }

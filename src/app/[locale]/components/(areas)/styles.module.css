@@ -1,0 +1,6 @@
+.marquee{
+    width: 100vw;
+    position: absolute !important;
+    height: 10rem;
+    left: 0;
+}

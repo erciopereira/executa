@@ -15,6 +15,65 @@
           "text-3": "seu instagram.",
           "text-4": "seus infoprodutos.",
           "text-5": "seus serviços."
+        },
+        "text-3": "Chegou a hora de se posicionar nas redes com estratégias que funcionam de verdade e impulsionam o seu nome.",
+        "text-button-position": "Quero posicionar a minha marca"
+      },
+      "important-things-area": {
+        "left-text": "O QUE É IMPORTANTE PARA NÓS",
+        "right-text": {
+          "text-1": "Autenticidade",
+          "text-2": "Competência",
+          "text-3": "Inspiração",
+          "text-4": "Comprometimento",
+          "description-text-1": "Ninguém cria uma marca ou imagem pessoal apenas copiando o que todo mundo faz.",
+          "description-text-2": "De nada adianta ter uma marca posicionada se ela não é competente ou especialista no que faz.",
+          "description-text-3": "É importante que a marca ou o profissional inspire as pessoas, principalmente, compartilhando aprendizados.",
+          "description-text-4": "Para ter o sucesso desejado com o posicionamento, você e sua marca precisam estar comprometidos com o processo e as entregas."
+        },
+        "marquee-text": {
+          "text-1": "EXPERIENTE",
+          "text-2": "EXCEPCIONAL",
+          "text-3": "EXTRAORDINÁRIA",
+          "text-4": "EXCELENTE"
+        }
+      },
+      "about-area": {
+        "text-1": "Conheça a empresa que cuidará das suas redes sociais!",
+        "text-2": "A Executa é um lugar completo para mídias sociais. Posicionamos no mercado empresas, empreendedores e profissionais de maneira assertiva, elegante, personalizada e inovadora.",
+        "text-3": "Nossa equipe é composta por um grupo de mulheres talentosas e apaixonadas por mídias digitais, com idades, formações acadêmicas, personalidades e localizações diversas.",
+        "text-4": "Cada uma traz consigo uma perspectiva única e uma riqueza de experiências que nos permite oferecer soluções criativas e eficazes para nossos clientes. De designers gráficos a especialistas em marketing digital, de redatoras e revisoras a gerentes de projetos, nossa equipe trabalha em conjunto para cocriar campanhas digitais que realmente se destacam."
+      },
+      "market-position": {
+        "market": {
+          "text-1": "+3 anos",
+          "text-2": "no mercado"
+        },
+        "clients": {
+          "text-1": "+50 clientes",
+          "text-2": "bem posicionados"
+        },
+        "team": {
+          "text-1": "100% um time",
+          "text-2": "composto por mulheres"
+        }
+      },
+      "executives-location": {
+        "title": "Onde estão nossos executivos"
+      },
+      "ideal-servise": {
+        "left-area": {
+          "text": "O SERVIÇO IDEAL PARA VOCÊ!"
+        },
+        "slide": {
+          "content": {
+            "exclusive": "Estratégias personalizadas para as diversas redes sociais, por meio da análise de objetivos, criação de conteúdo de valor e fortalecimento da marca.",
+            "expertise": "Consultoria pontual, com número definido de sessões, na qual a nossa equipe de especialistas faz um diagnóstico do posicionamento digital da empresa ou do profissional, propõe soluções e entrega o plano completo para que seja executado com sucesso.",
+            "executive": "Criação de um all-star profile no LinkedIn, para que executivos e executivas sejam notados no mercado de trabalho. Inclui a criação de uma estratégia de conteúdo robusta e única para alcançar os objetivos, assim como toda a operacionalização do processo.",
+            "executiveco": "Elaboração de estratégia de posicionamento de marca empregadora forte, usando seus líderes e colaboradores como influenciadores. Inclui um trabalho de suporte a todos os envolvidos, de forma a alavancar as suas páginas pessoais de LinkedIn também.",
+            "extreme": "Parceria estratégica entre a Executa e o especialista, para criar e lançar produtos digitais de sucesso.",
+            "expert": "Mentoria individual, totalmente personalizada, levando em conta as necessidades e objetivos do cliente."
+          }
         }
       }
     }
