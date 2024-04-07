@@ -2,9 +2,8 @@
 /* eslint-disable prettier/prettier */
 "use client";
 import { useTranslations } from "next-intl";
-import Marquee from "react-fast-marquee";
 import { Collapsed } from "../collapsed";
-import styles from "./styles.module.css";
+import { TextSlider } from "../text-slider";
 
 export function ImportantThingsArea() {
   const t = useTranslations("Index");
@@ -69,13 +68,7 @@ export function ImportantThingsArea() {
           />
         </div>
       </div>
-      <Marquee className={styles.marquee}>
-        {marqueeText.map((item) => (
-          <div key={item.text} className="text-6xl mr-24">
-            {item.text}
-          </div>
-        ))}
-      </Marquee>
+      <TextSlider marqueeText={marqueeText} />
     </>
   );
 }

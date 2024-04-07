@@ -3,6 +3,7 @@ import { Header } from "@/app/[locale]/components/(areas)/header";
 import { AboutArea } from "../components/(areas)/about-area";
 import { ContactArea } from "../components/(areas)/contact-area";
 import { ExecutivesLocation } from "../components/(areas)/executives-location";
+import { Footer } from "../components/(areas)/footer";
 import { IdealService } from "../components/(areas)/ideal-service";
 import { ImportantThingsArea } from "../components/(areas)/important-things-area";
 import { MarketPosition } from "../components/(areas)/market-position";
@@ -20,6 +21,7 @@ export default function Home() {
       <ExecutivesLocation />
       <IdealService />
       <ContactArea />
+      <Footer />
     </div>
   );
 }

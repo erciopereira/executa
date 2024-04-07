@@ -93,8 +93,16 @@
             "executiveco": "Executive&co",
             "extreme": "Extreme",
             "expert": "Expert"
-          }
+          },
+          "send": "Enviar"
         }
+      },
+      "footer": {
+        "text-slider": "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+        "email": "atendimento@executa.co",
+        "phone": "+55 (11) 95691‑0682",
+        "newsletter": "Inscreva-se na nossa Newsletter",
+        "executa": "EXECUTA.CO"
       }
     }
   }

@@ -1,12 +1,13 @@
 /* eslint-disable prettier/prettier */
 import { useTranslations } from "next-intl";
+import { Button } from "../button";
 import { Select } from "../select";
 
 export function ContactArea() {
   const t = useTranslations("Index");
 
   return (
-    <div className="relative top-[1350px] flex flex-col items-center">
+    <div className="mt-52 flex flex-col items-center">
       <div className="text-5xl font-bold leading-normal">
         {t("contact-area.title")}
       </div>
@@ -36,6 +37,11 @@ export function ContactArea() {
           <label>{t("contact-area.form.servise")}</label>
           <Select />
         </div>
+        <Button
+          name={t("contact-area.form.send")}
+          type="submit"
+          width="w-9/12"
+        />
       </form>
     </div>
   );

@@ -24,7 +24,7 @@ export function MarketPosition() {
   ];
 
   return (
-    <div className="relative">
+    <div>
       <div className="grid grid-rows-1 grid-cols-3 mt-56 border-y-2 border-gray-400 p-24">
         {prosMarketPosition.map((item) => (
           <div key={item.key} className="flex flex-col items-center">
@@ -33,7 +33,7 @@ export function MarketPosition() {
           </div>
         ))}
       </div>
-      <div className="absolute top-72 flex justify-center w-full">
+      <div className="mt-24 flex justify-center w-full">
         <Button name={t("start-area.text-button-position")} />
       </div>
     </div>

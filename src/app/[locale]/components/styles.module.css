@@ -13,3 +13,32 @@
 .contentShow {
     height: 60px;
 }
+.marquee{
+    width: 100vw;
+    position: absolute !important;
+    height: 10rem;
+    left: 0;
+}
+@keyframes colors {
+    0% {
+        background-color: #C3FF83;
+    }
+    25% {
+        background-color: #83d5ff;
+    }
+    50% {
+        background-color: #DCAFFF; 
+    }
+    75% {
+        background-color: #83d5ff;
+    }
+    100% {
+        background-color: #C3FF83;
+    } 
+}
+.footerTransition {
+    animation-name: colors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

@@ -66,7 +66,7 @@ export function IdealService() {
   };
 
   return (
-    <div className="grid grid-rows-1 grid-cols-2 relative top-[1150px] overflow-hidden">
+    <div className="grid grid-rows-1 grid-cols-2 mt-[1150px] overflow-hidden">
       <div className="flex justify-center flex-col z-10 bg-gray-back">
         <div className="z-10 text-8xl leading-tight">
           {t("ideal-servise.left-area.text")}
