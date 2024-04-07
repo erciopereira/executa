@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Header } from "@/app/[locale]/components/(areas)/header";
 import { AboutArea } from "../components/(areas)/about-area";
+import { ContactArea } from "../components/(areas)/contact-area";
 import { ExecutivesLocation } from "../components/(areas)/executives-location";
 import { IdealService } from "../components/(areas)/ideal-service";
 import { ImportantThingsArea } from "../components/(areas)/important-things-area";
@@ -18,6 +19,7 @@ export default function Home() {
       <MarketPosition />
       <ExecutivesLocation />
       <IdealService />
+      <ContactArea />
     </div>
   );
 }

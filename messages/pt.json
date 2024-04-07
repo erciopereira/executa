@@ -75,6 +75,26 @@
             "expert": "Mentoria individual, totalmente personalizada, levando em conta as necessidades e objetivos do cliente."
           }
         }
+      },
+      "contact-area": {
+        "title": "Quer conhecer melhor o nosso trabalho?",
+        "subtitle": "Preencha o formulário e entraremos em contato.",
+        "form": {
+          "name": "Nome",
+          "whatsapp": "WhatsApp",
+          "email": "E-mail",
+          "company": "Nome da empresa",
+          "servise": "Qual serviço você busca?",
+          "select": "Selecione um serviço...",
+          "options": {
+            "exclusive": "Exclusive",
+            "expertise": "Expertise",
+            "executive": "Executive",
+            "executiveco": "Executive&co",
+            "extreme": "Extreme",
+            "expert": "Expert"
+          }
+        }
       }
     }
   }
