@@ -18,7 +18,8 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: "formulariodecontato@executa.co",
-    to: "julyanamuniz@executa.co",
+    to: "quesiafernandes@executa.co",
+    cc: "erciop@gmail.com",
     subject: `Mensagem enviada de ${name} (${email}) através do site`,
     html: `<div><p>Nome: ${name}</p><p>WhatsApp: ${whatsapp}</p><p>E-mail: ${email}</p><p>Nome Empresa: ${company}</p><p>Serviço de interesse: ${service}</p></div>`,
   };
