@@ -15,8 +15,12 @@ export function LanguageButton({ setShowChangeLanguage }: LanguageButtonProps) {
     });
   }
   return (
-    <button type="button" onClick={openChangeLanguage}>
-      <Globe strokeWidth="1" className="cursor-pointer" />
+    <button
+      type="button"
+      onClick={openChangeLanguage}
+      className="flex items-center"
+    >
+      <Globe strokeWidth="1" size={34} className="cursor-pointer" />
     </button>
   );
 }

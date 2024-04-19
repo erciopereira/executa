@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import { LINK_WHATSAPP } from "@/configs/constants";
 import { useTranslations } from "next-intl";
 import { Button } from "../button";
 
@@ -25,16 +26,23 @@ export function MarketPosition() {
 
   return (
     <div>
-      <div className="grid grid-rows-1 grid-cols-3 mt-56 border-y-2 border-gray-400 p-24">
+      <div className="flex justify-around mt-56 border-y border-black py-24 max-1090:flex-col max-1090:gap-10">
         {prosMarketPosition.map((item) => (
           <div key={item.key} className="flex flex-col items-center">
-            <div className="text-6xl font-bold">{item.text1}</div>
-            <div className="text-4xl leading-normal">{item.text2}</div>
+            <div className="text-6xl font-bold whitespace-nowrap">
+              {item.text1}
+            </div>
+            <div className="text-4xl leading-normal whitespace-nowrap">
+              {item.text2}
+            </div>
           </div>
         ))}
       </div>
       <div className="mt-24 flex justify-center w-full">
-        <Button name={t("start-area.text-button-position")} />
+        <Button
+          name={t("start-area.text-button-position")}
+          link={LINK_WHATSAPP}
+        />
       </div>
     </div>
   );

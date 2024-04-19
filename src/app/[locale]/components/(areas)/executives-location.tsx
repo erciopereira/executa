@@ -1,39 +1,55 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prettier/prettier */
+"use client";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import alinfo from "../../../../../public/images/alinfo.png";
+import aquila from "../../../../../public/images/aquila.png";
+import bat from "../../../../../public/images/bat.png";
+import carrefour from "../../../../../public/images/carrefour.png";
+import comgas from "../../../../../public/images/comgas.png";
+import dell from "../../../../../public/images/dell.png";
+import filhos from "../../../../../public/images/filhos_no_cv.png";
+import gri from "../../../../../public/images/griclub.png";
+import ibgc from "../../../../../public/images/ibcg.png";
+import iisp from "../../../../../public/images/iisp.png";
+import ingredion from "../../../../../public/images/ingredion.png";
+import mondelez from "../../../../../public/images/mondelez.png";
+import nutrien from "../../../../../public/images/nutrien.png";
+import renner from "../../../../../public/images/renner.png";
+import vrs from "../../../../../public/images/vrs.png";
 
 export function ExecutivesLocation() {
   const t = useTranslations("Index");
 
-  const arrayEmpty = [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+  const arrayImages = [
+    dell,
+    ingredion,
+    bat,
+    mondelez,
+    aquila,
+    ibgc,
+    filhos,
+    iisp,
+    vrs,
+    renner,
+    carrefour,
+    comgas,
+    nutrien,
+    gri,
+    alinfo,
   ];
 
   return (
     <>
-      <div className="flex flex-col items-center mt-24 gap-y-28 p-20 bg-gray-dark absolute w-screen left-0 max-w-full">
-        <div className="text-5xl text-green-light">
+      <div className="flex flex-col items-center mt-top-20 gap-y-28 p-20">
+        <div className="text-5xl font-semibold">
           {t("executives-location.title")}
         </div>
-        <div className="grid grid-cols-4 gap-x-24 gap-y-8">
-          {arrayEmpty.map((): any => (
-            <div className="bg-gray-medium h-20 w-52 rounded-lg"></div>
+        <div className="grid grid-cols-5 gap-x-24 gap-y-8 max-1090:grid-cols-4 max-880:grid-cols-3">
+          {arrayImages.map((item): any => (
+            <Image src={item} alt="logos" className="self-center min-w-36" />
           ))}
         </div>
       </div>

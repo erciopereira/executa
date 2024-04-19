@@ -1,7 +1,6 @@
 {
     "Index": {
       "header": {
-        "start": "INÍCIO",
         "services": "SERVIÇOS",
         "about": "SOBRE",
         "contact": "CONTATO"
@@ -85,7 +84,6 @@
           "email": "E-mail",
           "company": "Nome da empresa",
           "servise": "Qual serviço você busca?",
-          "select": "Selecione um serviço...",
           "options": {
             "exclusive": "Exclusive",
             "expertise": "Expertise",
@@ -94,7 +92,20 @@
             "extreme": "Extreme",
             "expert": "Expert"
           },
-          "send": "Enviar"
+          "send": "Enviar",
+          "errors": {
+            "name": "É necessário informar o seu nome.",
+            "whatsapp": "É necessário informar seu número de whatsapp.",
+            "email": "É necessário informar seu e-mail.",
+            "company": "É necessário informar o nome da sua empresa.",
+            "service": "É necessário selecionar qual serviço você esta buscando."
+          },
+          "messages_send": {
+            "message_success_1": "Formulário enviado com sucesso! ",
+            "message_success_2": "Agora é só aguardar que alguém vai entrar em contato com você.",
+            "message_error_1": "Ocorreu um erro ao enviar o formulário! ",
+            "message_error_2": "Tente enviar novamente ou entre em contato pelos nosso outros canais de atendimento."
+          }
         }
       },
       "footer": {

@@ -1,7 +1,6 @@
 {
     "Index": {
       "header": {
-        "start": "START",
         "services": "SERVICES",
         "about": "ABOUT",
         "contact": "CONTACT"
@@ -75,6 +74,46 @@
             "expert": "Individual, fully personalized mentorship that considers the client’s unique needs and goals. This service offers a tailored approach to personal and professional growth. Interested in personalized mentorship?"
           }
         }
+      },
+      "contact-area": {
+        "title": "Interested in Learning More About Our Services?",
+        "subtitle": "Fill out the form below, and we will get in touch with you.",
+        "form": {
+          "name": "Name",
+          "whatsapp": "Phone",
+          "email": "Email",
+          "company": "Company Name",
+          "servise": "Which service are you interested in?",
+        "options": {
+            "exclusive": "Exclusive",
+            "expertise": "Expertise",
+            "executive": "Executive",
+            "executiveco": "Executive&co",
+            "extreme": "Extreme",
+            "expert": "Expert"
+          },
+          "send": "Submit",
+          "errors": {
+            "name": "It is necessary to inform your name.",
+            "whatsapp": "It is necessary to inform your phone number.",
+            "email": "It is necessary to inform your email.",
+            "company": "It is necessary to inform the name of your company.",
+            "service": "You need to select which service you are looking for."
+          },
+          "messages_send": {
+            "message_success_1": "Form sent with success! ",
+            "message_success_2": "Now just wait until someone comes into contact with you.",
+            "message_error_1": "An error occured when submitting the form! ",
+            "message_error_2": "Try sending again or contact us through our other service channels."
+          }
+        }
+      },
+      "footer": {
+        "text-slider": "CRAFTING STRATEGIES. PERFECTING EXECUTION.",
+        "email": "atendimento@executa.co",
+        "phone": "+55 (11) 95691‑0682",
+        "newsletter": "Inscreva-se na nossa Newsletter",
+        "executa": "EXECUTA.CO"
       }
     }
   }

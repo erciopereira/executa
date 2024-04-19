@@ -25,6 +25,20 @@ const config: Config = {
         "green-light": "#C3FF83",
         black: "#131313",
       },
+      fontSize: {
+        base: "3.5rem",
+        "clamp-executa-co": "clamp(1rem, 16vw, 16vw)",
+      },
+      margin: {
+        "top-20": "20rem",
+        "top-25": "25rem",
+        "top-30": "30rem",
+        "top-44": "44rem",
+      },
+      screens: {
+        "1090": "1090px",
+        "880": "880px",
+      },
     },
   },
   plugins: [],

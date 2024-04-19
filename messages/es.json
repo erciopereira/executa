@@ -1,7 +1,6 @@
 {
     "Index": {
       "header": {
-        "start": "COMENZAR",
         "services": "SERVICIOS",
         "about": "ACERCA DE",
         "contact": "CONTACTO"
@@ -75,6 +74,46 @@
             "expert": "Mentoría individual, totalmente personalizada, que tiene en cuenta las necesidades y objetivos del cliente."
           }
         }
+      },
+      "contact-area": {
+        "title": "¿Quieres conocer mejor nuestro trabajo?",
+        "subtitle": "Completa el formulario y nos pondremos en contacto contigo.",
+        "form": {
+          "name": "Nombre",
+          "whatsapp": "Teléfono",
+          "email": "E-mail",
+          "company": "Nombre de la empresa",
+          "servise": "¿Qué servicio buscas?",
+          "options": {
+            "exclusive": "Exclusive",
+            "expertise": "Expertise",
+            "executive": "Executive",
+            "executiveco": "Executive&co",
+            "extreme": "Extreme",
+            "expert": "Expert"
+          },
+          "send": "Enviar",
+          "errors": {
+            "name": "Es necesario informar su nombre",
+            "whatsapp": "Es necesario informar su teléfono.",
+            "email": "Es necesario informar su e-mail.",
+            "company": "Es necesario informar el nombre de su empresa.",
+            "service": "Es necesario seleccionar qué servicio estás buscando."
+          },
+          "messages_send": {
+            "message_success_1": "¡Formulario enviado exitosamente! ",
+            "message_success_2": "Ahora solo espera a que alguien se comunique contigo.",
+            "message_error_1": "¡Ocurrió un error al enviar el formulario! ",
+            "message_error_2": "Intente enviar nuevamente o contáctenos a través de nuestros otros canales de servicio."
+          }
+        }
+      },
+      "footer": {
+        "text-slider": "PLANIFICAMOS ESTRATEGIAS. LAS EJECUTAMOS CON MAESTRÍA.",
+        "email": "atendimento@executa.co",
+        "phone": "+55 (11) 95691‑0682",
+        "newsletter": "Inscreva-se na nossa Newsletter",
+        "executa": "EXECUTA.CO"
       }
     }
   }

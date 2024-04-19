@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prettier/prettier */
 "use client";
 import * as PrimitiveSelect from "@radix-ui/react-select";
 import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export function Select() {
+export function Select({ handleSelect, valueSelected }: any) {
   const t = useTranslations("Index");
   const propsOptions = [
     {
@@ -33,7 +34,10 @@ export function Select() {
     },
   ];
   return (
-    <PrimitiveSelect.Root defaultValue="apple">
+    <PrimitiveSelect.Root
+      value={valueSelected}
+      onValueChange={(val) => handleSelect(val)}
+    >
       <PrimitiveSelect.Trigger className="flex justify-between items-center h-12 text-black w-full text-3xl px-3 py-2 border">
         <PrimitiveSelect.Value />
         <PrimitiveSelect.Icon>
