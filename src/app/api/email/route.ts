@@ -8,8 +8,7 @@ export async function POST(request: NextRequest) {
   const { service, name, whatsapp, email, company } = await request.json();
 
   const transport = nodemailer.createTransport({
-    host: "br.obi6070.com.br",
-    port: 465,
+    service: "gmail",
     auth: {
       user: SMTP_EMAIL,
       pass: SMTP_PASSWORD,
@@ -17,10 +16,10 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions: Mail.Options = {
-    from: "formulariodecontato@executa.co",
-    to: "quesiafernandes@executa.co",
-    cc: "erciop@gmail.com",
-    subject: `Mensagem enviada de ${name} (${email}) através do site`,
+    from: `${name} <${email}>`,
+    to: "erciop@gmail.com",
+    // to: "nataliacervenka@executa.co",
+    subject: `Novo contato por formulário do site`,
     html: `<div><p>Nome: ${name}</p><p>WhatsApp: ${whatsapp}</p><p>E-mail: ${email}</p><p>Nome Empresa: ${company}</p><p>Serviço de interesse: ${service}</p></div>`,
   };
 
