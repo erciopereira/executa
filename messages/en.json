@@ -81,6 +81,7 @@
         "form": {
           "name": "Name",
           "whatsapp": "Phone",
+          "country": "Country",
           "email": "Email",
           "company": "Company Name",
           "servise": "Which service are you interested in?",
@@ -96,6 +97,7 @@
           "errors": {
             "name": "It is necessary to inform your name.",
             "whatsapp": "It is necessary to inform your phone number.",
+            "country": "It is necessary inform the country in which you reside",
             "email": "It is necessary to inform your email.",
             "company": "It is necessary to inform the name of your company.",
             "service": "You need to select which service you are looking for."

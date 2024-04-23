@@ -15,6 +15,7 @@ export type FormData = {
   company: string;
   whatsapp: string;
   service: string;
+  country: string;
 };
 
 export function ContactArea() {
@@ -101,6 +102,21 @@ export function ContactArea() {
           {errors?.whatsapp && (
             <div className="text-red-700 mt-2 w-full">
               {errors?.whatsapp.message}
+            </div>
+          )}
+        </div>
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
+          <input
+            {...register("country", {
+              required: t("contact-area.form.errors.country"),
+            })}
+            type="text"
+            placeholder={t("contact-area.form.country")}
+            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+          />
+          {errors?.country && (
+            <div className="text-red-700 mt-2 w-full">
+              {errors?.country.message}
             </div>
           )}
         </div>

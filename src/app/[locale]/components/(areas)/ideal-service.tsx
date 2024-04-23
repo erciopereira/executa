@@ -56,11 +56,6 @@ export function IdealService() {
   ];
 
   const handleSliderRight = () => {
-    let valueWidth = 500;
-    if (windowWidth < 580) {
-      const calcPercentage = windowWidth * 0.15;
-      valueWidth = windowWidth - calcPercentage;
-    }
     setCount((prev) => prev + 1);
     setSliderLeft((prev) => {
       if (count === 4 && windowWidth > 580) {
@@ -69,21 +64,29 @@ export function IdealService() {
         }
         return -2432;
       }
-      return prev - (valueWidth + 40);
+      return prev - (calcScreenSmall() + 40);
     });
   };
 
   const handleSliderLeft = () => {
+    setCount((prev) => prev - 1);
+    setSliderLeft((prev) => {
+      if (count === 5 && windowWidth > 580) return -2160;
+      return prev + (calcScreenSmall() + 40);
+    });
+  };
+
+  const calcScreenSmall = () => {
     let valueWidth = 500;
     if (windowWidth < 580) {
       const calcPercentage = windowWidth * 0.15;
       valueWidth = windowWidth - calcPercentage;
     }
-    setCount((prev) => prev - 1);
-    setSliderLeft((prev) => {
-      if (count === 5 && windowWidth > 580) return -2160;
-      return prev + (valueWidth + 40);
-    });
+    if (windowWidth <= 420) {
+      const calcPercentage = windowWidth * 0.2;
+      valueWidth = windowWidth - calcPercentage;
+    }
+    return valueWidth;
   };
 
   const calcResponsive = () => {
