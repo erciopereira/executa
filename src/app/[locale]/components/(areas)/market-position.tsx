@@ -29,10 +29,10 @@ export function MarketPosition() {
       <div className="flex justify-around mt-56 border-y border-black py-24 max-1090:flex-col max-1090:gap-10">
         {prosMarketPosition.map((item) => (
           <div key={item.key} className="flex flex-col items-center">
-            <div className="text-6xl font-bold whitespace-nowrap">
+            <div className="text-6xl font-bold whitespace-nowrap max-424:text-[14vw]">
               {item.text1}
             </div>
-            <div className="text-4xl leading-normal whitespace-nowrap">
+            <div className="text-4xl leading-normal whitespace-nowrap max-424:text-responsive">
               {item.text2}
             </div>
           </div>

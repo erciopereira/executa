@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import { AppWrapper } from "@/context";
 import localFont from "@next/font/local";
 import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -52,7 +53,7 @@ export default function RootLayout({
           className="absolute right-0 top-20"
         />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <AppWrapper>{children}</AppWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

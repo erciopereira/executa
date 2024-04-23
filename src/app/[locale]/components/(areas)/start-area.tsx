@@ -1,16 +1,31 @@
 /* eslint-disable prettier/prettier */
 "use client";
-import { useTranslations } from "next-intl";
-
 import { LINK_WHATSAPP } from "@/configs/constants";
+import { useAppContext } from "@/context";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import { Button } from "../button";
 
 export function StartArea() {
   const t = useTranslations("Index");
+  const { openMenu } = useAppContext();
+  const [blur, setBlur] = useState("");
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.cssText = "overflow: hidden";
+      setBlur("blur-sm");
+    } else {
+      document.body.style.cssText = "overflow: auto";
+      setBlur("");
+    }
+  }, [openMenu]);
 
   return (
-    <div className="flex items-center flex-col mt-80">
+    <div
+      className={`flex items-center text-center flex-col mt-80 max-790:mt-36 ${blur} duration-150`}
+    >
       <div className="z-10 text-base leading-snug">
         {t("start-area.text-1")}
       </div>

@@ -33,7 +33,9 @@ export function SelectLanguage({ showChangeLanguage }: SelectLanguageProps) {
   ];
 
   return (
-    <div className={`${showChangeLanguage} absolute left-1 top-10 -bottom-16`}>
+    <div
+      className={`${showChangeLanguage} absolute left-1 top-10 -bottom-16 max-790:relative max-790:top-2`}
+    >
       {languageProps.map((item) => (
         <button
           type="button"

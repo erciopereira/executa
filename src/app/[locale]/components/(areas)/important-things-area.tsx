@@ -10,10 +10,10 @@ export function ImportantThingsArea() {
   return (
     <>
       <div className="grid grid-rows-1 grid-cols-2 mt-80 gap-24 max-xl:flex max-xl:flex-col">
-        <div className="z-10 text-8xl leading-tight">
+        <div className="z-10 text-clamp-title-large leading-tight">
           {t("important-things-area.left-text")}
         </div>
-        <div className="z-10 text-base">
+        <div className="z-10 text-base max-570:text-responsive ">
           <Collapsed
             key="1"
             props={{

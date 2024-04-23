@@ -30,11 +30,29 @@ export function AboutArea() {
     <Element name="about">
       <div className="mt-top-25">
         <TextSlider marqueeText={marqueeText} />
-        <div className="grid grid-rows-1 grid-cols-2 pt-72 gap-10">
-          <div className="grid grid-rows-8 grid-flow-col gap-2 z-10 justify-center">
-            <Image src={foto1} alt="" className="row-start-1 row-span-6" />
-            <Image src={foto2} alt="" className="row-start-2 row-span-6" />
-            <Image src={foto3} alt="" className="row-start-3 row-span-6" />
+        <div className="grid grid-rows-1 grid-cols-2 pt-72 gap-10 max-940:flex max-940:flex-col">
+          <div className="grid grid-rows-8 grid-flow-col gap-2 z-10 justify-center max-940:flex">
+            <Image
+              src={foto1}
+              quality={100}
+              alt=""
+              className="row-start-1 row-span-6 max-w-52"
+              layout="responsive"
+            />
+            <Image
+              src={foto2}
+              quality={100}
+              alt=""
+              className="row-start-2 row-span-6 max-w-52"
+              layout="responsive"
+            />
+            <Image
+              src={foto3}
+              quality={100}
+              alt=""
+              className="row-start-3 row-span-6 max-w-52"
+              layout="responsive"
+            />
           </div>
           <div className="gap-16 flex flex-col z-10">
             <div className="text-base leading-tight font-semibold">

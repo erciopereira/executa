@@ -21,19 +21,19 @@ export function Footer() {
     >
       <TextSlider marqueeText={marqueeText} />
       <div className="text-3xl">
-        <div className="flex justify-between px-32 mt-56">
-          <div className="flex flex-col gap-8">
-            <div className="flex gap-2 items-center">
-              <Mail size={48} strokeWidth={1} />
+        <div className="flex justify-between px-32 mt-56 max-660:px-10 max-790:flex-col max-790:gap-8 max-790:items-center">
+          <div className="flex flex-col gap-8 max-790:items-center">
+            <div className="flex gap-2 items-center max-424:text-[6vw]">
+              <Mail size={48} strokeWidth={1} className="min-w-12" />
               <span>{t("footer.email")}</span>
             </div>
-            <div className="flex gap-2 items-center">
-              <Phone size={48} strokeWidth={1} />
+            <div className="flex gap-2 items-center max-424:text-[6vw]">
+              <Phone size={48} strokeWidth={1} className="min-w-12" />
               <span>{t("footer.phone")}</span>
             </div>
-            <div className="flex font-bold">
+            {/* <div className="flex font-bold">
               <span>{t("footer.newsletter")}</span>
-            </div>
+            </div> */}
           </div>
           <div className="flex gap-6">
             <a href={LINK_INSTAGRAM} target="_blank">

@@ -43,13 +43,13 @@ export function ExecutivesLocation() {
 
   return (
     <>
-      <div className="flex flex-col items-center mt-top-20 gap-y-28 p-20">
+      <div className="flex flex-col items-center text-center mt-top-20 gap-y-28">
         <div className="text-5xl font-semibold">
           {t("executives-location.title")}
         </div>
-        <div className="grid grid-cols-5 gap-x-24 gap-y-8 max-1090:grid-cols-4 max-880:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-x-24 gap-y-8 p-20 max-790:p-5">
           {arrayImages.map((item): any => (
-            <Image src={item} alt="logos" className="self-center min-w-36" />
+            <Image src={item} alt="logos" className="self-center w-40" />
           ))}
         </div>
       </div>

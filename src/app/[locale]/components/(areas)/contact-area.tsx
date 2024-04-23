@@ -58,10 +58,12 @@ export function ContactArea() {
 
   return (
     <div className="mt-top-30 flex flex-col items-center">
-      <div className="text-5xl font-bold leading-normal">
+      <div className="text-5xl font-bold leading-snug text-center max-570:text-[8vw]">
         {t("contact-area.title")}
       </div>
-      <div className="text-4xl italic">{t("contact-area.subtitle")}</div>
+      <div className="text-4xl italic mt-10 text-center max-570:text-[6vw]">
+        {t("contact-area.subtitle")}
+      </div>
       <form
         className="mt-10 w-full flex flex-col items-center gap-10"
         onSubmit={handleSubmit(submit)}
@@ -72,7 +74,7 @@ export function ContactArea() {
             required: t("contact-area.form.errors.service"),
           })}
         />
-        <div className="w-9/12 flex flex-col items-center">
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
           <input
             {...register("name", {
               required: t("contact-area.form.errors.name"),
@@ -87,7 +89,7 @@ export function ContactArea() {
             </div>
           )}
         </div>
-        <div className="w-9/12 flex flex-col items-center">
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
           <input
             {...register("whatsapp", {
               required: t("contact-area.form.errors.whatsapp"),
@@ -102,7 +104,7 @@ export function ContactArea() {
             </div>
           )}
         </div>
-        <div className="w-9/12 flex flex-col items-center">
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
           <input
             {...register("email", {
               required: t("contact-area.form.errors.email"),
@@ -117,7 +119,7 @@ export function ContactArea() {
             </div>
           )}
         </div>
-        <div className="w-9/12 flex flex-col items-center">
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
           <input
             {...register("company", {
               required: t("contact-area.form.errors.company"),
@@ -132,7 +134,7 @@ export function ContactArea() {
             </div>
           )}
         </div>
-        <div className="w-9/12 flex flex-col items-center">
+        <div className="w-9/12 flex flex-col items-center max-790:w-full">
           <div className="w-full font-bold text-3xl flex flex-col gap-5">
             <label>{t("contact-area.form.servise")}</label>
             <Select handleSelect={handleSelect} valueSelected={valueSelected} />
@@ -147,7 +149,7 @@ export function ContactArea() {
           disabled={loading}
           name={t("contact-area.form.send")}
           type="submit"
-          width="w-9/12"
+          width="w-9/12 max-790:w-full"
           showLoader={loading}
         />
       </form>

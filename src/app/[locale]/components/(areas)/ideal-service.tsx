@@ -1,10 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 "use client";
 import { LINK_WHATSAPP } from "@/configs/constants";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Element } from "react-scroll";
 import exclusive from "../../../../../public/images/exclusive.png";
 import executive from "../../../../../public/images/executive.png";
@@ -16,8 +17,11 @@ import { Button } from "../button";
 
 export function IdealService() {
   const t = useTranslations("Index");
-  const [teste, setTeste] = useState(0);
+  const [sliderLeft, setSliderLeft] = useState(0);
   const [count, setCount] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [calcSlider, setCalcSlider] = useState(1620);
+
   const propsCarousel = [
     {
       image: <Image src={exclusive} alt="" />,
@@ -52,26 +56,62 @@ export function IdealService() {
   ];
 
   const handleSliderRight = () => {
+    let valueWidth = 500;
+    if (windowWidth < 580) {
+      const calcPercentage = windowWidth * 0.15;
+      valueWidth = windowWidth - calcPercentage;
+    }
     setCount((prev) => prev + 1);
-    setTeste((prev) => {
-      if (prev === -2160) return -2432;
-      return prev - (500 + 40);
+    setSliderLeft((prev) => {
+      if (count === 4 && windowWidth > 580) {
+        if (windowWidth < 1620) {
+          return windowWidth - (4052 - calcSlider);
+        }
+        return -2432;
+      }
+      return prev - (valueWidth + 40);
     });
   };
 
   const handleSliderLeft = () => {
+    let valueWidth = 500;
+    if (windowWidth < 580) {
+      const calcPercentage = windowWidth * 0.15;
+      valueWidth = windowWidth - calcPercentage;
+    }
     setCount((prev) => prev - 1);
-    setTeste((prev) => {
-      if (prev === -2432) return -2160;
-      return prev + (500 + 40);
+    setSliderLeft((prev) => {
+      if (count === 5 && windowWidth > 580) return -2160;
+      return prev + (valueWidth + 40);
     });
   };
+
+  const calcResponsive = () => {
+    let value = 2210;
+    if (window.innerWidth < 1620) {
+      if (windowWidth < 1280 && windowWidth > 1120) value = 1620;
+      setCalcSlider((value - window.innerWidth) / 2);
+    }
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+      calcResponsive();
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [windowWidth]);
+
+  useEffect(() => {
+    calcResponsive();
+  }, []);
 
   return (
     <Element name="services">
       <div className="grid grid-rows-1 grid-cols-2 mt-top-25 overflow-hidden max-xl:flex max-xl:flex-col">
         <div className="flex flex-col z-10 bg-gray-back">
-          <div className="z-10 text-8xl leading-tight">
+          <div className="z-10 text-clamp-title-large leading-tight">
             {t("ideal-servise.left-area.text")}
           </div>
           <div className="mt-10">
@@ -90,7 +130,9 @@ export function IdealService() {
             </button>
             <button
               type="button"
-              disabled={count === 5}
+              disabled={
+                count === (windowWidth < 1280 && windowWidth > 1120 ? 4 : 5)
+              }
               onClick={() => handleSliderRight()}
             >
               <CircleArrowRight strokeWidth="1" size={48} />
@@ -99,7 +141,7 @@ export function IdealService() {
         </div>
         <div
           className="flex gap-10 relative duration-500"
-          style={{ left: `${teste}px` }}
+          style={{ left: `${sliderLeft}px` }}
         >
           {propsCarousel.map((item) => (
             <div key={item.title} className="bg-black rounded-3xl">
@@ -107,7 +149,7 @@ export function IdealService() {
               <div className="text-3xl text-green-light mx-10 py-5 border-b-2 border-gray-400">
                 {item.title}
               </div>
-              <div className="text-3xl text-button-text-color font-light w-[500px] p-10">
+              <div className="text-3xl text-button-text-color font-light w-[500px] p-10 max-424:w-[80vw] max-580:w-[85vw]">
                 {item.content}
               </div>
             </div>
