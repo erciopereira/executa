@@ -32,7 +32,7 @@ export function StartArea() {
       <div className="z-10 text-base leading-snug">
         {t("start-area.text-2")}
       </div>
-      <div className="z-10">
+      <div className="z-10 h-24">
         <Typewriter
           options={{
             autoStart: true,
