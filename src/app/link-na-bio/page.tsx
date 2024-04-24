@@ -6,6 +6,7 @@ import {
 } from "@/configs/constants";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import { TextSlider } from "../(components)/text-slider";
+import styles from "../[locale]/(areas)/styles.module.css";
 export default function LinkBio() {
   const marqueeText = [
     {
@@ -32,7 +33,9 @@ export default function LinkBio() {
   ];
 
   return (
-    <div className="flex flex-col justify-between h-page-link items-center">
+    <div
+      className={`${styles.footerTransition} flex flex-col justify-between h-screen items-center`}
+    >
       <div>
         <TextSlider marqueeText={marqueeText} noStyle />
       </div>
@@ -44,7 +47,7 @@ export default function LinkBio() {
           <button
             type="button"
             key={item.key}
-            className="border-2 border-current text-3xl p-2 rounded leading-normal hover:bg-button-link-hover"
+            className="border-2 border-current text-3xl p-2 rounded leading-normal bg-gray-back hover:bg-button-link-hover"
           >
             <a href={item.link} target="_blank">
               {item.title}
@@ -52,7 +55,7 @@ export default function LinkBio() {
           </button>
         ))}
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 mb-20">
         <a href={LINK_INSTAGRAM} target="_blank">
           <CiInstagram size={48} className="stroke-0" />
         </a>
@@ -60,7 +63,7 @@ export default function LinkBio() {
           <CiLinkedin size={48} className="stroke-0" />
         </a>
       </div>
-      <div>
+      <div className="relative w-full bottom-[80px]">
         <TextSlider marqueeText={marqueeText} noStyle />
       </div>
     </div>

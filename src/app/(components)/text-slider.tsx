@@ -11,7 +11,6 @@ export interface propsMarque {
 }
 
 export function TextSlider({ marqueeText, noStyle }: propsMarque) {
-  // const setStyle = noStyle ? "" : styles.marquee;
   return (
     <Marquee className={`${styles.marquee} ${noStyle ? "h-20" : ""} w-screen`}>
       {marqueeText.map((item) => (
