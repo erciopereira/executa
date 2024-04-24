@@ -25,6 +25,7 @@ const config: Config = {
         "gray-ligth": "#c5c5c5",
         "green-light": "#C3FF83",
         black: "#131313",
+        "button-link-hover": "#C2C2C2",
       },
       fontSize: {
         base: "3.5rem",
@@ -46,7 +47,11 @@ const config: Config = {
         "660": "660px",
         "580": "580px",
         "570": "570px",
+        "540": "540px",
         "424": "424px",
+      },
+      height: {
+        "page-link": "calc(100vh - 80px)",
       },
     },
   },

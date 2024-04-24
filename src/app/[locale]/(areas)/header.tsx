@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 "use client";
+import logo from "@/assets/images/logo.png";
 import { LINK_WHATSAPP } from "@/configs/constants";
 import { useAppContext } from "@/context";
 import { Menu } from "lucide-react";
@@ -7,10 +8,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../../../../../public/images/logo.png";
-import { Button } from "../button";
-import { LanguageButton } from "../language-button";
-import { SelectLanguage } from "../select-language";
+import { Button } from "../../(components)/button";
+import { LanguageButton } from "../../(components)/language-button";
+import { SelectLanguage } from "../../(components)/select-language";
 
 export function Header() {
   const { openMenu, setOpenMenu } = useAppContext();

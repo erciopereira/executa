@@ -5,7 +5,7 @@ import { useAppContext } from "@/context";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import { Button } from "../button";
+import { Button } from "../../(components)/button";
 
 export function StartArea() {
   const t = useTranslations("Index");

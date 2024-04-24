@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { LINK_WHATSAPP } from "@/configs/constants";
 import { useTranslations } from "next-intl";
-import { Button } from "../button";
+import { Button } from "../../(components)/button";
 
 export function MarketPosition() {
   const t = useTranslations("Index");

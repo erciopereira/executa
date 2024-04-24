@@ -2,12 +2,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prettier/prettier */
 "use client";
+import { sendMail } from "@/utils/send-email";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { sendMail } from "../../../../utils/send-email";
-import { Button } from "../button";
-import { Select } from "../select";
+import { Button } from "../../(components)/button";
+import { Select } from "../../(components)/select";
 
 export type FormData = {
   name: string;

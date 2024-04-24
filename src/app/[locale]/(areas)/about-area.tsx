@@ -1,12 +1,12 @@
 /* eslint-disable prettier/prettier */
 "use client";
+import foto1 from "@/assets/images/foto_1.png";
+import foto2 from "@/assets/images/foto_2.png";
+import foto3 from "@/assets/images/foto_3.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Element } from "react-scroll";
-import foto1 from "../../../../../public/images/foto_1.png";
-import foto2 from "../../../../../public/images/foto_2.png";
-import foto3 from "../../../../../public/images/foto_3.png";
-import { TextSlider } from "../text-slider";
+import { TextSlider } from "../../(components)/text-slider";
 
 export function AboutArea() {
   const t = useTranslations("Index");

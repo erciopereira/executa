@@ -3,8 +3,8 @@ import { LINK_INSTAGRAM, LINK_LINKEDIN } from "@/configs/constants";
 import { Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
-import styles from "../styles.module.css";
-import { TextSlider } from "../text-slider";
+import { TextSlider } from "../../(components)/text-slider";
+import styles from "./styles.module.css";
 
 export function Footer() {
   const t = useTranslations("Index");

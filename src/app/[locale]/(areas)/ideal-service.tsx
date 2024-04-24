@@ -1,19 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 "use client";
+import exclusive from "@/assets/images/exclusive.png";
+import executive from "@/assets/images/executive.png";
+import executiveco from "@/assets/images/executive_co.png";
+import expert from "@/assets/images/expert.png";
+import expertise from "@/assets/images/expertise.png";
+import extreme from "@/assets/images/extreme.png";
 import { LINK_WHATSAPP } from "@/configs/constants";
 import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Element } from "react-scroll";
-import exclusive from "../../../../../public/images/exclusive.png";
-import executive from "../../../../../public/images/executive.png";
-import executiveco from "../../../../../public/images/executive_co.png";
-import expert from "../../../../../public/images/expert.png";
-import expertise from "../../../../../public/images/expertise.png";
-import extreme from "../../../../../public/images/extreme.png";
-import { Button } from "../button";
+import { Button } from "../../(components)/button";
 
 export function IdealService() {
   const t = useTranslations("Index");

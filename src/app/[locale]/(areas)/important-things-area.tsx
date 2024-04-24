@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 "use client";
 import { useTranslations } from "next-intl";
-import { Collapsed } from "../collapsed";
+import { Collapsed } from "../../(components)/collapsed";
 
 export function ImportantThingsArea() {
   const t = useTranslations("Index");

@@ -1,0 +1,22 @@
+.rotate {
+    transform: rotate(180deg);
+    transition-duration: 0.6s;
+}
+.normal {
+    transition-duration: 0.6s; 
+}
+.content {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.6s;
+}
+.contentShow {
+    height: 60px;
+}
+.marquee{
+    width: 100vw;
+    position: absolute !important;
+    height: 5rem;
+    left: 0;
+    /* margin-top: 20rem; */
+}

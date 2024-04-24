@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prettier/prettier */
+import { useAppContext } from "@/context";
 import { useRouter } from "next/navigation";
 import { CircleFlag } from "react-circle-flags";
 
@@ -9,9 +10,11 @@ export interface SelectLanguageProps {
 
 export function SelectLanguage({ showChangeLanguage }: SelectLanguageProps) {
   const router = useRouter();
+  const { openMenu, setOpenMenu } = useAppContext();
 
   const changeLanguage = (value: string) => {
     router.replace(`/${value}`);
+    setOpenMenu(!openMenu);
   };
 
   const languageProps = [
