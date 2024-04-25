@@ -13,6 +13,12 @@ export function Footer() {
     {
       text: t("footer.text-slider"),
     },
+    {
+      text: t("footer.text-slider"),
+    },
+    {
+      text: t("footer.text-slider"),
+    },
   ];
 
   return (

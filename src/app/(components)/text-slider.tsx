@@ -12,11 +12,14 @@ export interface propsMarque {
 
 export function TextSlider({ marqueeText, noStyle }: propsMarque) {
   return (
-    <Marquee className={`${styles.marquee} ${noStyle ? "h-20" : ""} w-screen`}>
+    <Marquee
+      speed={100}
+      className={`${styles.marquee} ${noStyle && styles.marqueeSmall} w-screen`}
+    >
       {marqueeText.map((item) => (
         <div
           key={item.text}
-          className={`${noStyle ? "text-white" : ""} text-clamp-text-slider mr-24 max-570:mr-8`}
+          className={`${noStyle ? "text-white text-xl" : "text-clamp-text-slider"} mr-24 max-570:mr-8`}
         >
           {item.text}
         </div>

@@ -24,6 +24,18 @@ export function AboutArea() {
     {
       text: t("important-things-area.marquee-text.text-4"),
     },
+    {
+      text: t("important-things-area.marquee-text.text-1"),
+    },
+    {
+      text: t("important-things-area.marquee-text.text-2"),
+    },
+    {
+      text: t("important-things-area.marquee-text.text-3"),
+    },
+    {
+      text: t("important-things-area.marquee-text.text-4"),
+    },
   ];
 
   return (

@@ -6,9 +6,20 @@ import {
 } from "@/configs/constants";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import { TextSlider } from "../(components)/text-slider";
-import styles from "../[locale]/(areas)/styles.module.css";
 export default function LinkBio() {
   const marqueeText = [
+    {
+      text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+    },
+    {
+      text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+    },
+    {
+      text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+    },
+    {
+      text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+    },
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
     },
@@ -33,9 +44,7 @@ export default function LinkBio() {
   ];
 
   return (
-    <div
-      className={`${styles.footerTransition} flex flex-col justify-between h-screen items-center`}
-    >
+    <div className="flex flex-col justify-between h-screen items-center">
       <div>
         <TextSlider marqueeText={marqueeText} noStyle />
       </div>
@@ -63,7 +72,7 @@ export default function LinkBio() {
           <CiLinkedin size={48} className="stroke-0" />
         </a>
       </div>
-      <div className="relative w-full bottom-[80px]">
+      <div className="relative w-full bottom-[32px]">
         <TextSlider marqueeText={marqueeText} noStyle />
       </div>
     </div>

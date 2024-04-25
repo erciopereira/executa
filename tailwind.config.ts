@@ -30,7 +30,7 @@ const config: Config = {
       fontSize: {
         base: "clamp(1rem, 9vw, 3.5rem)",
         "start-text": "clamp(1rem, 7vw, 3.5rem)",
-        "clamp-text-slider": "clamp(1rem, 7vw, 3.75rem)",
+        "clamp-text-slider": "clamp(1rem, 6vw, 2.625rem)",
         "clamp-text-position": "clamp(1rem, 6vw, 2.25rem)",
         "clamp-executa-co": "clamp(1rem, 16vw, 16vw)",
         "clamp-title-large": "clamp(1rem, 8vw, 6rem)",
