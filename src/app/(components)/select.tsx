@@ -38,7 +38,7 @@ export function Select({ handleSelect, valueSelected }: any) {
       value={valueSelected}
       onValueChange={(val) => handleSelect(val)}
     >
-      <PrimitiveSelect.Trigger className="flex justify-between items-center h-12 text-black w-full text-3xl px-3 py-2 border">
+      <PrimitiveSelect.Trigger className="flex justify-between items-center h-12 text-black w-full text-clamp-text-body px-3 py-2 border">
         <PrimitiveSelect.Value />
         <PrimitiveSelect.Icon>
           <ChevronDown className="h-5 w-5 text-black" />
@@ -48,7 +48,7 @@ export function Select({ handleSelect, valueSelected }: any) {
         <PrimitiveSelect.Content
           side="bottom"
           position="popper"
-          className="z-10 w-[--radix-select-trigger-width] border text-black text-3xl bg-gray-ligth font-bold cursor-pointer "
+          className="z-10 w-[--radix-select-trigger-width] border text-black text-clamp-text-body bg-gray-ligth font-bold cursor-pointer "
         >
           <PrimitiveSelect.Viewport>
             {propsOptions.map((item) => (

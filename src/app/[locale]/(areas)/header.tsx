@@ -6,7 +6,7 @@ import { useAppContext } from "@/context";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { Button } from "../../(components)/button";
 import { LanguageButton } from "../../(components)/language-button";
@@ -67,6 +67,10 @@ export function Header() {
       return "hidden";
     });
   };
+
+  useEffect(() => {
+    if (!openMenu) setShowMenu("hidden");
+  }, [openMenu]);
 
   return (
     <>

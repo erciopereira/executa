@@ -58,11 +58,11 @@ export function ContactArea() {
   }, [responseSuccess]);
 
   return (
-    <div className="mt-top-30 flex flex-col items-center">
-      <div className="text-5xl font-bold leading-snug text-center max-570:text-[8vw]">
+    <div className="mt-top-30 flex flex-col items-center max-1090:mt-60 max-570:mt-36">
+      <div className="text-start-text leading-tight font-bold leading-snug text-center">
         {t("contact-area.title")}
       </div>
-      <div className="text-4xl italic mt-10 text-center max-570:text-[6vw]">
+      <div className="text-start-text leading-tight italic mt-10 text-center max-570:mt-5">
         {t("contact-area.subtitle")}
       </div>
       <form
@@ -82,10 +82,10 @@ export function ContactArea() {
             })}
             type="text"
             placeholder={t("contact-area.form.name")}
-            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+            className="w-full block font-bold text-clamp-text-body px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
           />
           {errors?.name && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.name.message}
             </div>
           )}
@@ -97,10 +97,10 @@ export function ContactArea() {
             })}
             type="text"
             placeholder={t("contact-area.form.whatsapp")}
-            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+            className="w-full block font-bold text-clamp-text-body px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
           />
           {errors?.whatsapp && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.whatsapp.message}
             </div>
           )}
@@ -112,10 +112,10 @@ export function ContactArea() {
             })}
             type="text"
             placeholder={t("contact-area.form.country")}
-            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+            className="w-full block font-bold text-clamp-text-body px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
           />
           {errors?.country && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.country.message}
             </div>
           )}
@@ -127,10 +127,10 @@ export function ContactArea() {
             })}
             type="email"
             placeholder={t("contact-area.form.email")}
-            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+            className="w-full block font-bold text-clamp-text-body px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
           />
           {errors?.email && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.email.message}
             </div>
           )}
@@ -142,21 +142,21 @@ export function ContactArea() {
             })}
             type="text"
             placeholder={t("contact-area.form.company")}
-            className="w-full block font-bold text-3xl px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
+            className="w-full block font-bold text-clamp-text-body px-3 py-2 bg-transparent placeholder:text-black h-full text-black focus:outline-none border focus:ring-black focus:ring-2"
           />
           {errors?.company && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.company.message}
             </div>
           )}
         </div>
         <div className="w-9/12 flex flex-col items-center max-790:w-full">
-          <div className="w-full font-bold text-3xl flex flex-col gap-5">
+          <div className="w-full font-bold text-clamp-text-body flex flex-col gap-5">
             <label>{t("contact-area.form.servise")}</label>
             <Select handleSelect={handleSelect} valueSelected={valueSelected} />
           </div>
           {errors?.service && (
-            <div className="text-red-700 mt-2 w-full">
+            <div className="bg-orange-100 border border-orange-400 text-orange-700 p-1.5 rounded mt-3 self-start text-clamp-message-error leading-none">
               {errors?.service.message}
             </div>
           )}
@@ -171,7 +171,7 @@ export function ContactArea() {
       </form>
       {responseError && (
         <div
-          className={`${closeMessage} bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded w-9/12 mt-10`}
+          className={`${closeMessage} bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded w-9/12 mt-10 max-790:w-full`}
         >
           <strong className="font-bold">
             {t("contact-area.form.messages_send.message_error_1")}
@@ -183,7 +183,7 @@ export function ContactArea() {
       )}
       {responseSuccess && (
         <div
-          className={`${closeMessage} bg-red-100 border border-green-400 text-green-700 px-4 py-3 rounded w-9/12 mt-10`}
+          className={`${closeMessage} bg-red-100 border border-green-400 text-green-700 px-4 py-3 rounded w-9/12 mt-10 max-790:w-full`}
         >
           <strong className="font-bold">
             {t("contact-area.form.messages_send.message_success_1")}

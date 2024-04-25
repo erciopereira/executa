@@ -10,11 +10,11 @@ export interface SelectLanguageProps {
 
 export function SelectLanguage({ showChangeLanguage }: SelectLanguageProps) {
   const router = useRouter();
-  const { openMenu, setOpenMenu } = useAppContext();
+  const { setOpenMenu, mobileMode } = useAppContext();
 
   const changeLanguage = (value: string) => {
     router.replace(`/${value}`);
-    setOpenMenu(!openMenu);
+    if (mobileMode) setOpenMenu(false);
   };
 
   const languageProps = [

@@ -22,7 +22,7 @@ export function Button({
     <button
       {...props}
       type={type || "button"}
-      className={`${width || ""} text-button-text-color font-light text-3xl bg-button-color px-4 py-2 rounded hover:bg-button-color-hover z-10 flex justify-center items-center`}
+      className={`${width || ""} text-button-text-color font-light text-clamp-text-button bg-button-color px-4 py-2 rounded hover:bg-button-color-hover z-10 flex justify-center items-center`}
     >
       {link ? (
         <a href={link} target="_blank">

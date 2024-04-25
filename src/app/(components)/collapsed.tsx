@@ -37,10 +37,12 @@ export function Collapsed({ props }: collapsedProps) {
           <ChevronDown strokeWidth="3" />
         </div>
       </button>
-      <div className={`${styles.content} ${showContent} text-2xl mt-4`}>
+      <div
+        className={`${styles.content} ${showContent} text-clamp-text-collapsed mt-4`}
+      >
         {props.description}
       </div>
-      <div className="border-b-2 mt-8 mb-8" />
+      <div className="border-b-2 mt-8 mb-8 max-570:mt-4 max-570:mb-4" />
     </>
   );
 }

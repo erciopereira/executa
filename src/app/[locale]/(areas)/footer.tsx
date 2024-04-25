@@ -17,11 +17,11 @@ export function Footer() {
 
   return (
     <div
-      className={`${styles.footerTransition} absolute w-screen left-0 max-w-full mt-96 py-24 pb-96`}
+      className={`${styles.footerTransition} absolute w-screen left-0 max-w-full mt-96 py-24 pb-96 max-1090:mt-60 max-1090:pb-60 max-570:mt-24 max-570:pb-32`}
     >
       <TextSlider marqueeText={marqueeText} />
       <div className="text-3xl">
-        <div className="flex justify-between px-32 mt-56 max-660:px-10 max-790:flex-col max-790:gap-8 max-790:items-center">
+        <div className="flex justify-between px-32 mt-56 max-790:flex-col max-790:gap-8 max-790:items-center max-660:px-10 max-570:mt-24">
           <div className="flex flex-col gap-8 max-790:items-center">
             <div className="flex gap-2 items-center max-424:text-[6vw]">
               <Mail size={48} strokeWidth={1} className="min-w-12" />
@@ -44,7 +44,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center text-clamp-executa-co leading-tight mt-56">
+        <div className="flex justify-center text-clamp-executa-co leading-tight mt-56 max-1090:mt-44 max-570:mt-24">
           {t("footer.executa")}
         </div>
       </div>
