@@ -28,17 +28,13 @@ const config: Config = {
         "button-link-hover": "#C2C2C2",
       },
       fontSize: {
-        base: "clamp(1rem, 9vw, 3.5rem)",
-        "start-text": "clamp(1rem, 7vw, 3.5rem)",
+        "clamp-title-text": "clamp(1rem, 7vw, 3.5rem)",
         "clamp-text-slider": "clamp(1rem, 6vw, 2.625rem)",
         "clamp-text-position": "clamp(1rem, 6vw, 2.25rem)",
         "clamp-executa-co": "clamp(1rem, 16vw, 16vw)",
         "clamp-title-large": "clamp(1rem, 8vw, 6rem)",
-        "clamp-text-body": "clamp(1rem, 6vw, 1.875rem)",
-        "clamp-text-button": "clamp(1rem, 5vw, 1.875rem)",
-        "clamp-text-collapsed": "clamp(1rem, 5vw, 1.875rem)",
+        "clamp-text-body": "clamp(1rem, 5vw, 1.875rem)",
         "clamp-message-error": "clamp(0.75rem, 3vw, 1rem)",
-        responsive: "7vw",
       },
       margin: {
         "top-20": "20rem",
@@ -47,6 +43,7 @@ const config: Config = {
         "top-44": "44rem",
       },
       screens: {
+        "1390": "1390px",
         "1090": "1090px",
         "940": "940px",
         "900": "900px",
@@ -64,6 +61,12 @@ const config: Config = {
       },
       height: {
         "page-link": "calc(100vh - 80px)",
+        "clamp-icon-menu": "clamp(1rem, 8vw, 3rem)",
+        "clamp-icon-language": "clamp(1rem, 8vw, 2.125rem)",
+      },
+      width: {
+        "clamp-icon-menu": "clamp(1rem, 8vw, 3rem)",
+        "clamp-icon-language": "clamp(1rem, 8vw, 2.125rem)",
       },
     },
   },

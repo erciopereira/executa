@@ -2,16 +2,16 @@
     "Index": {
       "header": {
         "services": "SERVICIOS",
-        "about": "ACERCA DE",
+        "about": "SOBRE EXECUTA",
         "contact": "CONTACTO"
       },
       "start-area": {
         "text-1": "Planificamos estrategias.",
-        "text-2": "Las ejecutamos con maestría",
+        "text-2": "Ejecutamos con maestría",
         "typing-text": {
           "text-1": "tus redes sociales.",
-          "text-2": "tu linkedin.",
-          "text-3": "tu instagram.",
+          "text-2": "tu LinkedIn.",
+          "text-3": "tu Instagram.",
           "text-4": "tus infoproductos.",
           "text-5": "tus servicios."
         },
@@ -19,7 +19,7 @@
         "text-button-position": "Quiero posicionar mi marca."
       },
       "important-things-area": {
-        "left-text": "LO QUE ES IMPORTANTE PARA NOSOTROS",
+        "left-text": "LO QUE ES IMPORTANTE PARA NOSOTRAS:",
         "right-text": {
           "text-1": "Autenticidad",
           "text-2": "Competencia",
@@ -41,7 +41,7 @@
         "text-1": "¡Conoce la empresa que se encargará de tus redes sociales!",
         "text-2": "Executa es el lugar ideal para que aprendas a posicionarte en las redes sociales. Posicionamos en el mercado empresas, emprendedores y ejecutivos de manera precisa, elegante, personalizada e innovadora.",
         "text-3": "Nuestro equipo está compuesto por un grupo de mujeres talentosas y apasionadas por los medios digitales, con edades, formaciones académicas, personalidades y ubicaciones diversas.",
-        "text-4": "Cada una aporta una perspectiva única y una riqueza de experiencias que nos permite ofrecer soluciones creativas y efectivas a nuestros clientes. Desde diseñadoras gráficas hasta especialistas en marketing digital, desde redactoras y correctoras hasta gestoras de proyectos, nuestro equipo trabaja en conjunto para cocrear campañas digitales que realmente destacan."
+        "text-4": "Cada una aporta una perspectiva única y una riqueza de experiencias que nos permite ofrecer soluciones creativas y efectivas a nuestros clientes. Desde diseñadoras hasta especialistas en marketing digital, desde redactoras y correctoras hasta gestoras de proyectos, nuestro equipo trabaja en conjunto para cocrear campañas digitales que realmente destacan."
       },
       "market-position": {
         "market": {
@@ -67,7 +67,7 @@
         "slide": {
           "content": {
             "exclusive": "Estrategias personalizadas para diversas redes sociales, por medio del análisis de objetivos, creación de contenido de valor y fortalecimiento de la marca.",
-            "expertise": "Consultoría puntual, con un número definido de sesiones, en la cual nuestro equipo de expertos realiza un diagnóstico del posicionamiento digital de la empresa o del profesional, propone soluciones y entrega el plan completo para que sea ejecutado con éxito.",
+            "expertise": "Consultoría puntual, con un número definido de sesiones, en la cual nuestro equipo de expertas realiza un diagnóstico del posicionamiento digital de la empresa o del profesional, propone soluciones y entrega el plan completo para que sea ejecutado con éxito.",
             "executive": "Creación de un perfil “all-star” en LinkedIn, para que ejecutivos y ejecutivas sean notados en el mercado laboral. Incluye la creación de una estrategia de contenido sólida y única para alcanzar los objetivos, así como toda la operacionalización del proceso.",
             "executiveco": "Elaboración de una estrategia de posicionamiento de marca empleadora sólida, que utiliza a sus líderes y colaboradores como influencers. Incluye un trabajo de apoyo a todos los involucrados, para potenciar también sus perfiles personales de LinkedIn.",
             "extreme": "Asociación estratégica entre Executa y el especialista para crear y lanzar productos digitales exitosos.",
@@ -95,18 +95,18 @@
           },
           "send": "Enviar",
           "errors": {
-            "name": "Es necesario informar su nombre",
-            "whatsapp": "Es necesario informar su teléfono.",
+            "name": "Es necesario informar tu nombre",
+            "whatsapp": "Es necesario informar tu teléfono.",
             "country": "Es necesario informar el país en el que resides.",
-            "email": "Es necesario informar su e-mail.",
-            "company": "Es necesario informar el nombre de su empresa.",
+            "email": "Es necesario informar tu e-mail.",
+            "company": "Es necesario informar el nombre de tu empresa.",
             "service": "Es necesario seleccionar qué servicio estás buscando."
           },
           "messages_send": {
-            "message_success_1": "¡Formulario enviado exitosamente! ",
+            "message_success_1": "¡El formulario se envió correctamente! ",
             "message_success_2": "Ahora solo espera a que alguien se comunique contigo.",
             "message_error_1": "¡Ocurrió un error al enviar el formulario! ",
-            "message_error_2": "Intente enviar nuevamente o contáctenos a través de nuestros otros canales de servicio."
+            "message_error_2": "Intente enviar nuevamente o contáctanos por medio de nuestros otros canales de comunicación."
           }
         }
       },
@@ -114,7 +114,7 @@
         "text-slider": "PLANIFICAMOS ESTRATEGIAS. LAS EJECUTAMOS CON MAESTRÍA.",
         "email": "atendimento@executa.co",
         "phone": "+55 (11) 95691‑0682",
-        "newsletter": "Inscreva-se na nossa Newsletter",
+        "newsletter": "Suscríbete para recibir nuestra Newsletter",
         "executa": "EXECUTA.CO"
       }
     }

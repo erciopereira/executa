@@ -12,12 +12,15 @@ export function Footer() {
   const marqueeText = [
     {
       text: t("footer.text-slider"),
+      key: 0,
     },
     {
       text: t("footer.text-slider"),
+      key: 1,
     },
     {
       text: t("footer.text-slider"),
+      key: 2,
     },
   ];
 

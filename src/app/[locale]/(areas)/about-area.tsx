@@ -14,27 +14,35 @@ export function AboutArea() {
   const marqueeText = [
     {
       text: t("important-things-area.marquee-text.text-1"),
+      key: 0,
     },
     {
       text: t("important-things-area.marquee-text.text-2"),
+      key: 1,
     },
     {
       text: t("important-things-area.marquee-text.text-3"),
+      key: 2,
     },
     {
       text: t("important-things-area.marquee-text.text-4"),
+      key: 3,
     },
     {
       text: t("important-things-area.marquee-text.text-1"),
+      key: 4,
     },
     {
       text: t("important-things-area.marquee-text.text-2"),
+      key: 5,
     },
     {
       text: t("important-things-area.marquee-text.text-3"),
+      key: 6,
     },
     {
       text: t("important-things-area.marquee-text.text-4"),
+      key: 7,
     },
   ];
 
@@ -67,16 +75,16 @@ export function AboutArea() {
             />
           </div>
           <div className="gap-16 flex flex-col z-10 max-570:gap-8">
-            <div className="text-base leading-tight font-semibold">
+            <div className="text-clamp-title-text leading-tight font-semibold">
               {t("about-area.text-1")}
             </div>
-            <div className="text-clamp-text-button leading-tight">
+            <div className="text-clamp-text-body leading-tight">
               {t("about-area.text-2")}
             </div>
-            <div className="text-clamp-text-button leading-tight">
+            <div className="text-clamp-text-body leading-tight">
               {t("about-area.text-3")}
             </div>
-            <div className="text-clamp-text-button leading-tight">
+            <div className="text-clamp-text-body leading-tight">
               {t("about-area.text-4")}
             </div>
           </div>

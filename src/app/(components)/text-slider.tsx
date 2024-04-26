@@ -6,6 +6,7 @@ import styles from "./styles.module.css";
 export interface propsMarque {
   marqueeText: {
     text: string;
+    key: number;
   }[];
   noStyle?: boolean;
 }
@@ -18,7 +19,7 @@ export function TextSlider({ marqueeText, noStyle }: propsMarque) {
     >
       {marqueeText.map((item) => (
         <div
-          key={item.text}
+          key={item.key}
           className={`${noStyle ? "text-white text-xl" : "text-clamp-text-slider"} mr-24 max-570:mr-8`}
         >
           {item.text}

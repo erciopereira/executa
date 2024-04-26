@@ -20,7 +20,10 @@ export function LanguageButton({ setShowChangeLanguage }: LanguageButtonProps) {
       onClick={openChangeLanguage}
       className="flex items-center"
     >
-      <Globe strokeWidth="1" size={34} className="cursor-pointer" />
+      <Globe
+        strokeWidth="1"
+        className="cursor-pointer h-clamp-icon-language w-clamp-icon-language min-w-4"
+      />
     </button>
   );
 }

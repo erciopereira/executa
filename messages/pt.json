@@ -10,16 +10,16 @@
         "text-2": "Executamos com maestria",
         "typing-text": {
           "text-1": "suas redes sociais.",
-          "text-2": "seu linkedin.",
-          "text-3": "seu instagram.",
+          "text-2": "seu LinkedIn.",
+          "text-3": "seu Instagram.",
           "text-4": "seus infoprodutos.",
           "text-5": "seus serviços."
         },
         "text-3": "Chegou a hora de se posicionar nas redes com estratégias que funcionam de verdade e impulsionam o seu nome.",
-        "text-button-position": "Quero posicionar a minha marca"
+        "text-button-position": "Quero posicionar a minha marca."
       },
       "important-things-area": {
-        "left-text": "O QUE É IMPORTANTE PARA NÓS",
+        "left-text": "O QUE É IMPORTANTE PARA NÓS:",
         "right-text": {
           "text-1": "Autenticidade",
           "text-2": "Competência",
@@ -27,7 +27,7 @@
           "text-4": "Comprometimento",
           "description-text-1": "Ninguém cria uma marca ou imagem pessoal apenas copiando o que todo mundo faz.",
           "description-text-2": "De nada adianta ter uma marca posicionada se ela não é competente ou especialista no que faz.",
-          "description-text-3": "É importante que a marca ou o profissional inspire as pessoas, principalmente, compartilhando aprendizados.",
+          "description-text-3": "É importante que a marca ou o profissional inspire as pessoas, principalmente compartilhando aprendizados.",
           "description-text-4": "Para ter o sucesso desejado com o posicionamento, você e sua marca precisam estar comprometidos com o processo e as entregas."
         },
         "marquee-text": {
@@ -41,7 +41,7 @@
         "text-1": "Conheça a empresa que cuidará das suas redes sociais!",
         "text-2": "A Executa é um lugar completo para mídias sociais. Posicionamos no mercado empresas, empreendedores e profissionais de maneira assertiva, elegante, personalizada e inovadora.",
         "text-3": "Nossa equipe é composta por um grupo de mulheres talentosas e apaixonadas por mídias digitais, com idades, formações acadêmicas, personalidades e localizações diversas.",
-        "text-4": "Cada uma traz consigo uma perspectiva única e uma riqueza de experiências que nos permite oferecer soluções criativas e eficazes para nossos clientes. De designers gráficos a especialistas em marketing digital, de redatoras e revisoras a gerentes de projetos, nossa equipe trabalha em conjunto para cocriar campanhas digitais que realmente se destacam."
+        "text-4": "Cada uma traz consigo uma perspectiva única e uma riqueza de experiências que nos permite oferecer soluções criativas e eficazes para nossos clientes. De designers a especialistas em marketing digital, de redatoras e revisoras a gerentes de projetos, nossa equipe trabalha em conjunto para cocriar campanhas digitais que realmente se destacam."
       },
       "market-position": {
         "market": {
@@ -69,9 +69,9 @@
             "exclusive": "Estratégias personalizadas para as diversas redes sociais, por meio da análise de objetivos, criação de conteúdo de valor e fortalecimento da marca.",
             "expertise": "Consultoria pontual, com número definido de sessões, na qual a nossa equipe de especialistas faz um diagnóstico do posicionamento digital da empresa ou do profissional, propõe soluções e entrega o plano completo para que seja executado com sucesso.",
             "executive": "Criação de um all-star profile no LinkedIn, para que executivos e executivas sejam notados no mercado de trabalho. Inclui a criação de uma estratégia de conteúdo robusta e única para alcançar os objetivos, assim como toda a operacionalização do processo.",
-            "executiveco": "Elaboração de estratégia de posicionamento de marca empregadora forte, usando seus líderes e colaboradores como influenciadores. Inclui um trabalho de suporte a todos os envolvidos, de forma a alavancar as suas páginas pessoais de LinkedIn também.",
+            "executiveco": "Elaboração de estratégia de posicionamento de marca empregadora forte, usando seus líderes e colaboradores como influenciadores. Inclui um trabalho de suporte a todos os envolvidos, de forma a alavancar também as suas páginas pessoais de LinkedIn.",
             "extreme": "Parceria estratégica entre a Executa e o especialista, para criar e lançar produtos digitais de sucesso.",
-            "expert": "Mentoria individual, totalmente personalizada, levando em conta as necessidades e objetivos do cliente."
+            "expert": "Mentoria individual, totalmente personalizada, que leva em conta as necessidades e os objetivos do cliente."
           }
         }
       },
@@ -84,7 +84,7 @@
           "country": "País",
           "email": "E-mail",
           "company": "Nome da empresa",
-          "servise": "Qual serviço você busca?",
+          "servise": "Por qual serviço você se interessa?",
           "options": {
             "exclusive": "Exclusive",
             "expertise": "Expertise",
@@ -95,18 +95,18 @@
           },
           "send": "Enviar",
           "errors": {
-            "name": "É necessário informar o seu nome.",
-            "whatsapp": "É necessário informar seu número de whatsapp.",
-            "country": "É necessário informar o país que você reside",
+            "name": "É necessário informar seu nome.",
+            "whatsapp": "É necessário informar seu número de WhatsApp.",
+            "country": "É necessário informar o país em que você reside.",
             "email": "É necessário informar seu e-mail.",
             "company": "É necessário informar o nome da sua empresa.",
-            "service": "É necessário selecionar qual serviço você esta buscando."
+            "service": "É necessário selecionar que serviço você está buscando."
           },
           "messages_send": {
             "message_success_1": "Formulário enviado com sucesso! ",
             "message_success_2": "Agora é só aguardar que alguém vai entrar em contato com você.",
             "message_error_1": "Ocorreu um erro ao enviar o formulário! ",
-            "message_error_2": "Tente enviar novamente ou entre em contato pelos nosso outros canais de atendimento."
+            "message_error_2": "Tente enviar novamente ou entre em contato pelos nossos outros canais de atendimento."
           }
         }
       },
@@ -114,7 +114,7 @@
         "text-slider": "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
         "email": "atendimento@executa.co",
         "phone": "+55 (11) 95691‑0682",
-        "newsletter": "Inscreva-se na nossa Newsletter",
+        "newsletter": "Inscreva-se para receber a nossa Newsletter",
         "executa": "EXECUTA.CO"
       }
     }

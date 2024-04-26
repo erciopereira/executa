@@ -10,18 +10,23 @@ export default function LinkBio() {
   const marqueeText = [
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+      key: 0,
     },
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+      key: 1,
     },
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+      key: 2,
     },
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+      key: 3,
     },
     {
       text: "DESENHAMOS ESTRATÉGIAS. EXECUTAMOS COM MAESTRIA.",
+      key: 4,
     },
   ];
 

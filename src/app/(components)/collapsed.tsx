@@ -38,7 +38,7 @@ export function Collapsed({ props }: collapsedProps) {
         </div>
       </button>
       <div
-        className={`${styles.content} ${showContent} text-clamp-text-collapsed mt-4`}
+        className={`${styles.content} ${showContent} text-clamp-text-body mt-4`}
       >
         {props.description}
       </div>

@@ -27,7 +27,7 @@ export function ImportantThingsArea() {
         <div className="z-10 text-clamp-title-large leading-tight max-xl:text-center">
           {t("important-things-area.left-text")}
         </div>
-        <div className="z-10 text-base max-570:text-responsive ">
+        <div className="z-10 text-clamp-title-text">
           <Collapsed
             key="1"
             props={{

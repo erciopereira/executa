@@ -62,7 +62,7 @@ export function IdealService() {
     setCount((prev) => prev + 1);
     setSliderLeft((prev) => {
       if (count === 4 && windowWidth > 580) {
-        if (windowWidth < 1620) {
+        if (windowWidth < 1600) {
           return windowWidth - (4052 - calcSlider);
         }
         return -2432;
@@ -86,7 +86,7 @@ export function IdealService() {
       valueWidth = windowWidth - calcPercentage;
     }
     if (windowWidth <= 420) {
-      const calcPercentage = windowWidth * 0.16;
+      const calcPercentage = windowWidth * 0.17;
       valueWidth = windowWidth - calcPercentage;
     }
     return valueWidth;
@@ -94,8 +94,19 @@ export function IdealService() {
 
   const calcResponsive = () => {
     let value = 2210;
-    if (window.innerWidth < 1620) {
-      if (windowWidth < 1280 && windowWidth > 1120) value = 1620;
+    if (window.innerWidth < 1600 && window.innerWidth >= 1500) {
+      value = 1800;
+      setCalcSlider((value - window.innerWidth) / 4);
+    }
+    if (window.innerWidth > 1400 && window.innerWidth < 1500) {
+      value = 1700;
+      setCalcSlider((value - window.innerWidth) / 4);
+    }
+    if (windowWidth < 1280 && windowWidth > 1120) {
+      value = 1620;
+      setCalcSlider((value - window.innerWidth) / 2);
+    }
+    if (windowWidth < 1120) {
       setCalcSlider((value - window.innerWidth) / 2);
     }
   };
@@ -117,8 +128,8 @@ export function IdealService() {
   }, []);
 
   const areaButtons = () => (
-    <div className="flex max-xl:flex-col max-xl:items-center max-xl:mt-10">
-      <div className="mx-10 flex gap-4 max-570:mx-6">
+    <div className="flex flex-col max-1390:items-center">
+      <div className="mr-10 mt-10 flex gap-4 max-570:mx-6">
         <button
           type="button"
           disabled={count === 0}
@@ -129,7 +140,7 @@ export function IdealService() {
         <button
           type="button"
           disabled={
-            count === (windowWidth < 1280 && windowWidth > 1120 ? 4 : 5)
+            count === (windowWidth < 1390 && windowWidth > 1120 ? 4 : 5)
           }
           onClick={() => handleSliderRight()}
         >
@@ -147,12 +158,12 @@ export function IdealService() {
 
   return (
     <Element name="services">
-      <div className="grid grid-rows-1 grid-cols-2 mt-top-25 overflow-hidden max-xl:flex max-xl:flex-col max-1090:mt-32">
+      <div className="grid grid-rows-1 grid-cols-2 mt-top-25 overflow-hidden max-1390:flex max-1390:flex-col max-1090:mt-32">
         <div className="flex flex-col z-10 bg-gray-back">
-          <div className="z-10 text-clamp-title-large leading-tight max-xl:text-center max-xl:mb-20">
+          <div className="z-10 text-clamp-title-large leading-tight max-1390:text-center max-1390:mb-20">
             {t("ideal-servise.left-area.text")}
           </div>
-          {windowWidth >= 1280 && areaButtons()}
+          {windowWidth >= 1390 && areaButtons()}
         </div>
         <div
           className="flex gap-10 relative duration-500"
@@ -164,13 +175,13 @@ export function IdealService() {
               <div className="text-clamp-text-body text-green-light mx-10 py-5 border-b-2 border-gray-400">
                 {item.title}
               </div>
-              <div className="text-clamp-text-button text-button-text-color font-light w-[500px] p-10 max-424:w-[84vw] max-580:w-[85vw]">
+              <div className="text-clamp-text-body text-button-text-color font-light w-[500px] p-10 max-424:w-[83vw] max-580:w-[85vw]">
                 {item.content}
               </div>
             </div>
           ))}
         </div>
-        {windowWidth < 1280 && areaButtons()}
+        {windowWidth < 1390 && areaButtons()}
       </div>
     </Element>
   );

@@ -59,10 +59,10 @@ export function ContactArea() {
 
   return (
     <div className="mt-top-30 flex flex-col items-center max-1090:mt-60 max-570:mt-36">
-      <div className="text-start-text leading-tight font-bold leading-snug text-center">
+      <div className="text-clamp-title-text leading-tight font-bold leading-snug text-center">
         {t("contact-area.title")}
       </div>
-      <div className="text-start-text leading-tight italic mt-10 text-center max-570:mt-5">
+      <div className="text-clamp-title-text leading-tight italic mt-10 text-center max-570:mt-5">
         {t("contact-area.subtitle")}
       </div>
       <form

@@ -26,10 +26,10 @@ export function StartArea() {
     <div
       className={`flex items-center text-center flex-col mt-72 max-790:mt-36 max-570:mt-20 ${blur} duration-150`}
     >
-      <div className="z-10 text-start-text leading-snug max-790:font-bold">
+      <div className="z-10 text-clamp-title-text leading-snug max-790:font-bold">
         {t("start-area.text-1")}
       </div>
-      <div className="z-10 text-start-text leading-snug max-790:font-bold">
+      <div className="z-10 text-clamp-title-text leading-snug max-790:font-bold">
         {t("start-area.text-2")}
       </div>
       <div className="z-10">
