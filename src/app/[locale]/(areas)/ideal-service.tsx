@@ -86,7 +86,7 @@ export function IdealService() {
       valueWidth = windowWidth - calcPercentage;
     }
     if (windowWidth <= 420) {
-      const calcPercentage = windowWidth * 0.17;
+      const calcPercentage = windowWidth * 0.164;
       valueWidth = windowWidth - calcPercentage;
     }
     return valueWidth;
@@ -175,7 +175,7 @@ export function IdealService() {
               <div className="text-clamp-text-body text-green-light mx-10 py-5 border-b-2 border-gray-400">
                 {item.title}
               </div>
-              <div className="text-clamp-text-body text-button-text-color font-light w-[500px] p-10 max-424:w-[83vw] max-580:w-[85vw]">
+              <div className="text-clamp-text-body text-button-text-color font-light w-[500px] p-10 max-424:w-[83.6vw] max-580:w-[85vw]">
                 {item.content}
               </div>
             </div>
